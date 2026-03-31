@@ -20,9 +20,6 @@ func Info(dataset []string, dp DataParser) {
 			log.Printf("ошибка при парсинге %s элемента: %v\n", v, err)
 			continue
 		}
-
-	}
-	if len(dataset) > 0 {
 		s, err := dp.ActionInfo()
 		if err != nil {
 			log.Printf("ошибка при выводе Actioninfo: %v\n", err)
